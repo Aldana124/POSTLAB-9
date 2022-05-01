@@ -21,9 +21,6 @@
 #pragma config BOR4V = BOR40V               // Brown-out Reset Selection bit (Brown-out Reset set to 4.0V)
 #pragma config WRT = OFF                    // Flash Program Memory Self Write Enable bits (Write protection off)
 
-// #pragma config statements should precede project file includes.
-// Use project enums instead of #define for ON and OFF.
-
 #include <xc.h>
 #include <stdint.h>
 
@@ -33,8 +30,8 @@
 #define _XTAL_FREQ 4000000
 #define IN_MIN 0                // Valor minimo de entrada del potenciometro
 #define IN_MAX 255              // Valor máximo de entrada del potenciometro
-#define OUT_MIN 250             // Valor minimo de ancho de pulso de señal PWM   (18 para servo MG996R)
-#define OUT_MAX 500             // Valor máximo de ancho de pulso de señal PWM   (79 para servo MG996R)
+#define OUT_MIN 250             // Valor minimo de ancho de pulso de señal PWM   
+#define OUT_MAX 500             // Valor máximo de ancho de pulso de señal PWM   
 
 
 /*------------------------------------------------------------------------------
